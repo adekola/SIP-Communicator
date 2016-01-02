@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/narrow-jumbo.css">
+  </head>
+  <body>
+      
+    <div class="container">
+        
+          <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Sign In</a></li>
+            <!-- <li role="presentation"><a href="#">Contact</a></li> -->
+          </ul>
+        </nav>
+        <h3 class="text-muted">SIP Communicator</h3>
+      </div>
+        
+        
+        <div class="row">
+            <div class="col-md-5">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Remote Video</h3>
+                    </div>
+                    <div class="panel-body">
+                        <video id="remoteVideo"></video>
+                    </div>
+                </div>
+                <p>
+                    <button type="button" class="btn btn-success" id="makeCall">Make/Receive Call</button>
+                    <button type="button" class="btn btn-danger" id="endCall">End Call</button>
+                </p>
+            </div>
+            <!-- Spacing -->
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-5">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Local Video</h3>
+                    </div>
+                    <div class="panel-body">
+                        <video id="localVideo"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+        <p>&copy; 2016. Kola Adebayo et Jonathan Pucher </p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+    <script src="/javascripts/sip-0.7.2.min.js"></script>
+    <script src="/javascripts/sip_app.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+  </body>
+</html>
