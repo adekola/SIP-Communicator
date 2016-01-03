@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+      
+    <div class="container">
+        
+       <% include partials/header %>
+        
+        
+        <div class="row">
+           
+            <!-- Spacing -->
+            <div class="col-md-2"></div>
+            
+            <div class="col-md-8">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="username" class="col-sm-2 control-label">Username</label>
+                    <div class="col-sm-10">
+                      <input type="username" class="form-control" id="username" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="sip-id" class="col-sm-2 control-label">SIP Id</label>
+                    <div class="col-sm-10">
+                      <input type="username" class="form-control" id="sip-id" placeholder="you@yourdomain.com">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                  </div>
+                  
+                    <!-- <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Remember me
+                        </label>
+                      </div>
+                    </div>
+                  </div> -->
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                      <a class="btn btn-success" href="https://signup.onsip.com/sipjs">Sign Up</a>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            
+            <!-- Spacing -->
+            <div class="col-md-2"></div>
+            
+        </div>
+        
+        <footer class="footer">
+           <% include partials/footer %>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+    <script src="/javascripts/sip-0.7.2.min.js"></script>
+    <script src="/javascripts/sip_app.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+  </body>
+</html>
